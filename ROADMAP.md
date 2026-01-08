@@ -24,5 +24,4 @@ To further validate findings, the agent will integrate with third-party security
 *   **VirusTotal Integration:** Automatically query file hashes, domains, and IP addresses against VirusTotal to gather reputation data.
 *   **Threat Intel Feeds:** Cross-reference observables with other configured threat intelligence sources.
 
-### Phase 4: Active Response (Planned)
-*   **Automated Containment:** Capability to execute containment actions (e.g., isolating a host) if the confidence score meets a high threshold (95%+).
+
