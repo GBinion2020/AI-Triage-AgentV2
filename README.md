@@ -18,10 +18,13 @@ flowchart LR
     D --> F[Final<br/>Classification]
     F --> G[Output:<br/>Decision + History]
     
-    style A fill:#e1f5ff
-    style D fill:#fff4e1
-    style F fill:#e1ffe1
-    style G fill:#ffe1f5
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style B fill:#6B7C93,stroke:#4A5A6B,stroke-width:2px,color:#fff
+    style C fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
+    style D fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style E fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style F fill:#27AE60,stroke:#1E8449,stroke-width:2px,color:#fff
+    style G fill:#34495E,stroke:#2C3E50,stroke-width:2px,color:#fff
 ```
 
 ### Detailed Workflow Diagram
@@ -69,15 +72,30 @@ flowchart TD
     NextAlert -->|Yes| Extract
     NextAlert -->|No| End
     
-    style Start fill:#e1f5ff
-    style End fill:#ffe1f5
-    style Decision fill:#fff4e1
-    style SelectTool fill:#fff4e1
-    style FinalClassify fill:#e1ffe1
-    style LLMAnalysis fill:#e1ffe1
-    style RAG fill:#f0e1ff
-    style SIEMQuery fill:#ffe1f5
-    style VTQuery fill:#ffe1f5
+    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style End fill:#34495E,stroke:#2C3E50,stroke-width:2px,color:#fff
+    style Fetch fill:#6B7C93,stroke:#4A5A6B,stroke-width:2px,color:#fff
+    style Extract fill:#6B7C93,stroke:#4A5A6B,stroke-width:2px,color:#fff
+    style RAG fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
+    style InitLoop fill:#6B7C93,stroke:#4A5A6B,stroke-width:2px,color:#fff
+    style Decision fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style CheckMandatory fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style CheckMandatoryFinal fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style SelectTool fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style CheckDuplicate fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style CheckTurns fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style CheckAlerts fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style NextAlert fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style SIEMQuery fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style VTQuery fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style Execute fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style ForceSIEM fill:#E67E22,stroke:#D35400,stroke-width:2px,color:#fff
+    style BlockDuplicate fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
+    style Summarize fill:#6B7C93,stroke:#4A5A6B,stroke-width:2px,color:#fff
+    style IncrementTurn fill:#6B7C93,stroke:#4A5A6B,stroke-width:2px,color:#fff
+    style FinalClassify fill:#27AE60,stroke:#1E8449,stroke-width:2px,color:#fff
+    style LLMAnalysis fill:#27AE60,stroke:#1E8449,stroke-width:2px,color:#fff
+    style Output fill:#27AE60,stroke:#1E8449,stroke-width:2px,color:#fff
 ```
 
 ### Detailed Workflow Steps
